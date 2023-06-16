@@ -197,11 +197,6 @@ form > div > div > label {
   align-items: center;
 }
 
-.container > div {
-  margin-right: auto;
-  padding-left: var(--xs);
-}
-
 .comments {
   display: grid;
   grid-template-columns: 50px auto;
@@ -209,6 +204,9 @@ form > div > div > label {
 }
 
 .container > div {
+  margin-right: auto;
+  padding-left: var(--xs);
+
   display: flex;
   flex-direction: column;
 }
