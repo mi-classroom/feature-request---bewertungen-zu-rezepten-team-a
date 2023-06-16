@@ -183,30 +183,29 @@ form > div > div > label {
 /* Kommentare
 ############################################################################ */
 
-.avatar {
-  height: 100px;
-  width: 100px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-}
-
-.comments {
-  display: grid;
-  grid-template-columns: 50px auto;
-  gap: var(--xs);
-}
-
-.container > div {
-  margin-right: auto;
-  padding-left: var(--xs);
-
-  display: flex;
-  flex-direction: column;
-}
+.comment {
+    list-style: none;
+    margin-bottom: var(--l);
+  }
+  
+  .comment > li {
+      padding: var(--m);
+      display: flex;
+  }
+  
+  .comment > li > span {
+      aspect-ratio: 1/1;
+  }
+  
+  .comment > li > div {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .avatar {
+      height: 100px;
+      width: 100px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
