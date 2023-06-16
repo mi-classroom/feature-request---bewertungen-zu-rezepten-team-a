@@ -189,4 +189,26 @@ form > div > div > label {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container > div {
+  margin-right: auto;
+  padding-left: var(--xs);
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 50px auto;
+  gap: var(--xs);
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
 }
