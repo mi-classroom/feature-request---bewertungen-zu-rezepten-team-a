@@ -160,25 +160,33 @@
   line-height: var(--xl);
 }
 
-/* Bewertung
+/* Form
 ############################################################################ */
-
-
 
 form > div > div > label {
   display: block;
 }
 
 .one-line {
-    display: flex;
-    gap: var(--m);
+  display: flex;
+  gap: var(--m);
 }
 
 .one-line input {
-    width: 100%;
+  width: 100%;
 }
 
 .one-line > * {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
+/* Kommentare
+############################################################################ */
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
