@@ -213,11 +213,44 @@
                 lädt
                 dazu ein, die Welt der Aromen zu entdecken.
             </p>
-        </section>
+        
+    <div>
+        <form>
+        <h2>Neue Bewertung</h2>
+        <div class="one-line">
+            <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required />
+            </div>
+        </div>
 
-        //TODO: Bewertung
+        <div>
+            <label for="message">Erläuterung zur Bewertung</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
+        <div class="one-line">
+            <div>
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy">Datenschutzerklärung</label>
+            </div>
+        </div>
 
+        <div class="one-line">
+            <div>
+            <input type="reset">Zurücksetzen</input>
+            </div>
+            <div>
+            <input type="submit">Abenden</input>
+            </div>
+        </div>
+        </form>
+    </div>
+    
         <p>
             <a href="/index.html">zurück zur Übersicht</a>
         </p>
