@@ -186,11 +186,17 @@ form > div > div > label {
 .comment {
     list-style: none;
     margin-bottom: var(--l);
+    padding-left: 0;
   }
+
+.comment h3 {
+    padding-top: 0;
+}
   
   .comment > li {
-      padding: var(--m);
       display: flex;
+      gap: var(--m);
+      margin-bottom: var(--l);
   }
   
   .comment > li > span {
