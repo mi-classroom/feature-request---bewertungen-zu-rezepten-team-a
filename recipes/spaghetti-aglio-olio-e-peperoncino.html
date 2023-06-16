@@ -216,38 +216,40 @@
         
     <div>
         <form>
-        <h2>Neue Bewertung</h2>
-        <div class="one-line">
-            <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+            <h2>Neue Bewertung</h2>
+            <div class="one-line">
+                <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Max Mustermann" required />
+                </div>
+                <div>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="max@mustermann.de" required />
+                </div>
             </div>
-            <div>
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" required />
-            </div>
-        </div>
 
-        <div>
-            <label for="message">Erläuterung zur Bewertung</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+            <div class="one-line">
+                <div>
+                    <label for="message">Erläuterung zur Bewertung</label>
+                    <textarea id="message" name="message" rows="6" cols ="54" required></textarea>
+                </div>
+            </div>
 
-        <div class="one-line">
-            <div>
-            <input type="checkbox" id="privacy" name="privacy" required />
-            <label for="privacy">Datenschutzerklärung</label>
+            <div class="one-line">
+                
+                    <input type="checkbox" id="privacy" name="privacy" required />
+                    <label for="privacy">Ich habe die Datenschutzerklärung zur Kenntnis genommen.</label>
+                
             </div>
-        </div>
 
-        <div class="one-line">
-            <div>
-            <input type="reset">Zurücksetzen</input>
+            <div class="one-line">
+                <div>
+                <input type="reset">Zurücksetzen</input>
+                </div>
+                <div>
+                <input type="submit">Absenden</input>
+                </div>
             </div>
-            <div>
-            <input type="submit">Abenden</input>
-            </div>
-        </div>
         </form>
     </div>
     

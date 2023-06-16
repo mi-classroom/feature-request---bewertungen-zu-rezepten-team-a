@@ -164,8 +164,17 @@
 ############################################################################ */
 
 form > div {
-  display: flex;
+    display: flex;
 }
+
+form > div > div {
+    padding: var(--xs)
+}
+
+form > div > div > label {
+  display: block;
+}
+
 .one-line {
   padding: 10px;
   flex: 1;
