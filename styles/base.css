@@ -1,0 +1,158 @@
+:root{
+    --xs: 1rem;
+    --s: 1.25rem;
+    --m: 1.6rem;
+    --l: 2rem;
+    --xl: 2.5rem;
+
+    --lh-normal: 140%;
+    --lh-tight: 110%;
+    --lh-loose: 160%;
+
+    --ff-sans: Arial, Helvetica, sans-serif;
+
+    --dark: hsla(0, 0%, 0%, 0.7);
+    --darker: hsla(0, 0%, 0%, 0.85);
+    --darkest: hsla(0, 0%, 0%, 1);
+    --light: hsla(0, 0%, 0%, 0.1);
+    --lighter: hsla(0, 0%, 0%, 0.05);
+    --lightest: hsla(0, 0%, 0%, 0);
+
+    --max-content-width: 50rem;
+    --max-container-width: 70rem;
+    --figure-width: 66%;
+
+    --border-width-s: 1px;
+    --border-width-m: 3px;
+    --border-color: var(--lighter);
+
+    --color-scheme: dark light;
+
+    --pink: rgb(246,209,209);
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: var(--lh-normal);
+    hyphens: auto;
+}
+
+body{
+    padding: var(--xl);
+}
+
+body > * {
+    max-width: var(--max-container-width);
+    margin: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main > *:not(.hero-with-image) {
+    max-width: var(--max-content-width);
+    width: 100%;
+}
+
+
+/* Text
+############################################################################ */
+
+h1, h2, h3{
+    font-weight: normal;
+    line-height: 100%;
+    padding-bottom: var(--s);
+    hyphens: none;
+}
+
+h1{
+    font-size: var(--xl);
+    padding-top: var(--l);
+}
+
+h2{
+    font-size: var(--m);
+    padding-top: var(--l);
+}
+
+h3{
+    font-weight: bold;
+    padding-top: var(--l);
+}
+
+p{
+    margin-bottom: var(--s);
+}
+
+
+/* Lists
+############################################################################ */
+
+ol li{
+    margin-bottom: var(--s);
+}
+
+
+/* Images
+############################################################################ */
+
+figure{
+    padding-top: var(--xl);
+    padding-bottom: var(--xl);
+    width: var(--figure-width);
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    padding-top: var(--xs);
+}
+
+
+/* Tables
+############################################################################ */
+
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+table td, table th{
+    text-align: left;
+    padding: 0.2rem var(--xs);
+    border-top: solid var(--border-width-s) var(--border-color);
+}
+
+table + figcaption{
+    border-top: solid var(--border-width-m) var(--border-color);
+    border-left: none;
+    padding-left: 0;
+}
+
+table th{
+    font-weight: normal
+}
+
+table thead th{
+    font-weight: bold;
+}
+
+
+/* Definition List
+############################################################################ */
+
+dl dt{
+    font-weight: bold;
+    float: left;
+    padding-right: 0.3ch;
+}
+
+dl dt::after{
+    content: ": ";
+}

@@ -1,0 +1,21 @@
+.is-absolute{
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    z-index: -1;
+}
+
+.is-relative{
+    position: relative;
+}
+
+.is-sticky{
+    position: sticky;
+    top: -30%;
+}
+
+.pull-right{
+    position: absolute;
+    right: 0;
+}

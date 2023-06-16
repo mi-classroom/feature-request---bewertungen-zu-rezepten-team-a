@@ -1,0 +1,159 @@
+/* Navigation
+############################################################################ */
+
+.main-navigation{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-bottom: var(--l);
+    background-color: var(--lightest);
+}
+
+.main-navigation ul{
+    display: flex;
+    padding: 0;
+    gap: var(--m);
+}
+
+.main-navigation ul > li{
+    display: block;
+}
+
+.main-navigation ul > li a{
+    color: var(--darker);
+    text-decoration: none;
+}
+
+.main-navigation ul > li a:hover{
+    color: var(--darkest);
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5ch;
+}
+
+.main-navigation ul > li:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* Hero with image
+############################################################################ */
+
+.hero-with-image{
+    position: relative;
+    width: 100%;
+    max-width: var(--max-container-width);
+    padding: var(--l);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hero-with-image > *{
+    position: relative;
+    z-index: 10;
+    max-width: calc(var(--max-content-width) * 0.66);
+}
+
+.hero-with-image::after{
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background: linear-gradient(90deg, rgb(255 255 255 / 80%) 0%, rgb(255 255 255 / 0%) 100%);
+    content: "";
+}
+
+.hero-with-image .content-navigation{
+    position: fixed;
+    z-index: 20;
+    top: 110px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--s);
+    background-color: var(--pink);
+}
+
+.hero-with-image .content-navigation ul{
+    padding: 0;
+    margin: 0;
+}
+
+.hero-with-image .content-navigation ul > li{
+    display: block;
+}
+
+.hero-with-image .content-navigation ul > li a{
+    color: var(--darker);
+    text-decoration: none;
+}
+
+.hero-with-image .content-navigation ul > li a:hover{
+    color: var(--darkest);
+    text-decoration: underline;
+    text-underline-offset: 0.5ch;
+}
+
+/* Grid
+############################################################################ */
+
+.grid{
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* Steps
+############################################################################ */
+
+.steps{
+    padding: 0;
+    counter-reset: step-count;
+}
+
+.steps > li{
+    display: block;
+    counter-increment: step-count;
+}
+
+.steps > li.is-text-only{
+    display: flex;
+    justify-content: center;
+}
+
+.steps > li.is-text-only p{
+    max-width: calc(var(--max-content-width) * 0.5);
+}
+
+.steps > li figure{
+    display: flex;
+    width: auto;
+    align-items: center;
+    gap: var(--m);
+}
+
+.steps > li figure > *{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.steps .is-reversed{
+    flex-direction: row-reverse;
+}
+
+.steps .has-counter{
+    position: relative;
+    padding-top: 0;
+    margin-left: var(--xl);
+}
+
+.steps .has-counter::before {
+    position: absolute;
+    left: calc(var(--xl) * -1);
+    color: var(--pink);
+    content: counter(step-count);
+    font-size: var(--xl);
+    font-weight: bold;
+    line-height: var(--xl);
+}
